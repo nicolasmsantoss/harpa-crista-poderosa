@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nicolas Mariano">
+    <meta name="description" content="Aprenda a tocar músicas da Harpa Cristã com mais harmonia, preenchimento e chord melody. Método prático para violão e guitarra.">
+    <meta property="og:title" content="Harpa Cristã Poderosa">
+    <meta property="og:description" content="Aprenda tocar hinos da Harpa Cristã com mais harmonia, preenchimento e chord melody.">
+    
     <link rel="stylesheet" href="style/pages/main.css">
     <link rel="stylesheet" href="style/responsive/tablet.css">
     <link rel="stylesheet" href="style/responsive/celular.css">
-    <title>Pagina de vendas</title>
+    <title>Harpa Cristã Poderosa</title>
 
         <!-- Meta Pixel Code -->
     <script>
@@ -191,7 +195,7 @@
             </div>
         
             <div class="card-main-7">
-                <h3>Harmonia Cristã Poderosa</h3>
+                <h3>Harpa Cristã Poderosa</h3>
                 <span>✓ ENSINA MODELOS VALIDADOS</span>
                 <span>✓ APLICAÇÃO REAL</span>
                 <span>✓ FOCO NO ESTILO CRISTÃO</span>
@@ -263,9 +267,6 @@
             content_ids: ['harpa-crista-poderosa']
             });
 
-            const carrossel = document.querySelector('.carrossel-main-4')
-            const cards = document.querySelectorAll('.card-main-4')
-
             /Initiane/
             document.getElementById('btn-comprar').addEventListener('click', function() {
             fbq('track', 'InitiateCheckout', {
@@ -276,6 +277,11 @@
             });
 
         /Animação Carrossel/
+
+        
+        const carrossel = document.querySelector('.carrossel-main-4')
+        const cards = document.querySelectorAll('.card-main-4')
+
         let index = 0
 
         function autoScroll() {
@@ -283,10 +289,10 @@
             index++
 
             if(index >= cards.length){
-            index = 0
+                index = 0
             }
 
-        const cardWidth = cards[0].offsetWidth + 20
+            const cardWidth = cards[0].offsetWidth + 20
 
             carrossel.scrollTo({
                 left: cardWidth * index,
@@ -295,6 +301,7 @@
         }
 
         setInterval(autoScroll, 3000)
+
     </script>
 </body>
 </html>
