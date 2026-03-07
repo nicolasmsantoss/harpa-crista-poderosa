@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="style/responsive/tablet.css">
     <link rel="stylesheet" href="style/responsive/celular.css">
     <title>Pagina de vendas</title>
+
+        <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1654616932644945');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1654616932644945&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
     
 </head>
 <body>
@@ -24,7 +44,7 @@
         <div class="textos-main-1">
         <h1>Transforme sua forma de tocar a <span class="highlight-main-1">Harpa Cristã</span></h1>
         <p>Saia do básico e aprenda a tocar com perfomance moderna, mais preenchida e com seus primeiros Chord Melodys aplicados à Harpa.</p>
-        <a href="https://pay.kiwify.com.br/V4f7Vom" target="_blank" rel="noopener noreferrer">QUERO FAZER PARTE!</a>
+        <a href="https://pay.kiwify.com.br/V4f7Vom" id="btn-comprar" target="_blank" rel="noopener noreferrer">QUERO FAZER PARTE!</a>
         <div class="abaixo-botao-main">
             <span class="span-abaixo-botao">Mesmo que hoje você no formato tradicional.</span>
             <img class="icone-header" src="assets/images/icone-header.webp" alt="icone-guitarra">
@@ -59,7 +79,7 @@
             </div>
         </div>
         <div class="video-wrap">
-            <iframe src="https://www.youtube.com/embed/30SzO9RVOdfc?si=R0kNG4sm3xfHTbui&amp;controls=0" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/0SzO9RVOdfc?si=mjFY8BHBgaoLxOx0" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="container-main-2-bottom">
             <div class="text-container">
@@ -102,7 +122,7 @@
             <span>Você não aprende teoria <strong class="highlight-main-3"> solta</strong></span>
             <span>Você aprende <strong class="highlight-main-3">aplicação</strong></span>
         </div>
-        <a class="btn=pill" href="https://pay.kiwify.com.br/V4f7Vom" target="_blank" rel="noopener noreferrer">QUERO TURBINAR AS MÚSICAS DA HARPA</a>
+        <a class="btn-pill" href="https://pay.kiwify.com.br/V4f7Vom" target="_blank" rel="noopener noreferrer">QUERO TURBINAR AS MÚSICAS DA HARPA</a>
     </section>
     <section class="main-4">
         <h2>Dá uma olhada no que você vai <span class="highlight-main-4">receber</span>:</h2>
@@ -146,7 +166,7 @@
             </div>
             <div class="text-container-main-5">
             <h3>É Hora de ir para o próximo nível. Existe um modelo. E ele é mais simples que você imagina</h3>
-            <a href="https://pay.kiwify.com.br/V4f7Vom" target="_blank" rel="noopener noreferrer">QUERO TER MEU ACESSO AGORA!</a>
+            <a href="https://pay.kiwify.com.br/V4f7Vom" id="btn-comprar" target="_blank" rel="noopener noreferrer">QUERO TER MEU ACESSO AGORA!</a>
             </div>
         </div>
         <hr>
@@ -208,7 +228,7 @@
                 <p class="preco-bottom">Ou <span class="high-preco-bottom">R$59,90</span> à vista</p>
             </div>
             
-            <a href="https://pay.kiwify.com.br/V4f7Vom" target="_blank" rel="noopener noreferrer">QUERO GARANTIR MINHA VAGA AGORA MESMO</a>
+            <a href="https://pay.kiwify.com.br/V4f7Vom" id="btn-comprar" target="_blank" rel="noopener noreferrer">QUERO GARANTIR MINHA VAGA AGORA MESMO</a>
             <img class="img-main-8" src="assets/images/icone-kiwify.webp" alt="icone-kiwify">
         </div>
     </section>
@@ -235,9 +255,27 @@
     </footer>
 
     <script>
+
+            /Meta Pixel Code /
+            fbq('track', 'ViewContent', {
+            content_name: 'Harpa Cristã Poderosa',
+            content_category: 'curso',
+            content_ids: ['harpa-crista-poderosa']
+            });
+
             const carrossel = document.querySelector('.carrossel-main-4')
             const cards = document.querySelectorAll('.card-main-4')
 
+            /Initiane/
+            document.getElementById('btn-comprar').addEventListener('click', function() {
+            fbq('track', 'InitiateCheckout', {
+            content_name: 'Harpa Cristã Poderosa',
+            value: 59.90,
+            currency: 'BRL'
+            });
+            });
+
+        /Animação Carrossel/
         let index = 0
 
         function autoScroll() {
