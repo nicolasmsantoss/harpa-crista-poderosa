@@ -1,0 +1,29 @@
+Barlow Light
+font-family: "barlow", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Barlow Regular
+font-family: "barlow", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Barlow Italic
+font-family: "barlow", sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Barlow Bold
+font-family: "barlow", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Barlow Bold Italic
+font-family: "barlow", sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Barlow ExtraBold
+font-family: "barlow", sans-serif;
+font-weight: 800;
+font-style: normal;
