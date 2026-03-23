@@ -227,6 +227,31 @@
 <footer>
 <span>Copyright © 2026 Luiz Carlos Oliveira Dos Santos. Todos os direitos reservados.</span>
 </footer>
-<script>/Meta Pixel Code /;fbq("track","ViewContent",{content_name:"Harpa Cristã Poderosa",content_category:"curso",content_ids:["harpa-crista-poderosa"]});/Initiane/;document.getElementById("btn-comprar").addEventListener("click",function(){fbq("track","InitiateCheckout",{content_name:"Harpa Cristã Poderosa",value:59.9,currency:"BRL"})});/Animação Carrossel/;const carrossel=document.querySelector(".carrossel-main-4");const cards=document.querySelectorAll(".card-main-4");let index=0function autoScroll(){index++;if(index>=cards.length){index=0}const a=cards[0].offsetWidth+20;carrossel.scrollTo({left:a*index,behavior:"smooth"})}setInterval(autoScroll,3000);</script>
+<script>
+            /Meta Pixel Code /
+            fbq('track', 'ViewContent', {
+            content_name: 'Harpa Cristã Poderosa',
+            content_category: 'curso',
+            content_ids: ['harpa-crista-poderosa']
+            });
+            /Initiane/
+            document.getElementById('btn-comprar').addEventListener('click', function() {
+            fbq('track', 'InitiateCheckout', {
+            content_name: 'Harpa Cristã Poderosa',
+            value: 59.90,
+            currency: 'BRL'
+            });
+            });
+        /Animação Carrossel/
+        const carrossel = document.querySelector('.carrossel-main-4')
+        const cards = document.querySelectorAll('.card-main-4')
+        let index = 0
+        function autoScroll() {index++
+            if(index >= cards.length){index = 0}
+            const cardWidth = cards[0].offsetWidth + 20
+            carrossel.scrollTo({
+                left: cardWidth * index,behavior: "smooth"})}
+        setInterval(autoScroll, 3000)
+</script>
 </body>
 </html>
